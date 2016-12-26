@@ -1,6 +1,6 @@
 # @ngx-translate/core [![Build Status](https://travis-ci.org/ocombe/ngx-translate/core.svg?branch=master)](https://travis-ci.org/ocombe/ngx-translate/core) [![npm version](https://img.shields.io/npm/v/@ngx-translate/core.svg)](https://www.npmjs.com/package/@ngx-translate/core)
 
-An implementation of angular translate for Angular 2.
+The internationalization (i18n) library for Angular 2+.
 
 Simple example using ngx-translate: http://plnkr.co/edit/btpW3l0jr5beJVjohy1Q?p=preview
 
@@ -30,7 +30,7 @@ If you're importing directly from `node_modules`, you should edit your systemjs 
 
 #### 1. Import the `TranslateModule`:
 
-Finally, you can use ngx-translate in your Angular 2 project.It is recommended to import `TranslateModule.forRoot()` in the NgModule of your application.
+Finally, you can use ngx-translate in your Angular project.It is recommended to import `TranslateModule.forRoot()` in the NgModule of your application.
 
 The [`forRoot`](https://angular.io/docs/ts/latest/guide/ngmodule.html#!#core-for-root) static method is a convention that provides and configures services at the same time. Make sure you only call this method at the root module of your application, most of the time called `AppModule`. This method allows you to configure the `TranslateModule` loader. By default it will use the `TranslateStaticLoader`, but you can provide another loader instead as a parameter of this method (see below [Write & use your own loader](#write--use-your-own-loader)).
 
@@ -359,11 +359,11 @@ If you're using npm 2.x, upgrade to npm 3.x, because npm 2 doesn't handle peer d
 
 If you're already on npm 3, check if it's an error (`npm ERR!`) or a warning (`npm WARN!`), warning are just informative and if everything works then don't worry !
 
-If you're using an old version of angular 2 and ngx-translate requires a newer version then you should consider upgrading your application to use the newer angular 2 version. There is always a reason when I upgrade the minimum dependencies of the library. Often it is because Angular had a breaking changes. If it's not an option for you, then check [the changelog](/releases) to know which version is the last compatible version for you.
+If you're using an old version of Angular and ngx-translate requires a newer version then you should consider upgrading your application to use the newer angular 2 version. There is always a reason when I upgrade the minimum dependencies of the library. Often it is because Angular had a breaking changes. If it's not an option for you, then check [the changelog](/releases) to know which version is the last compatible version for you.
 
 
 ## Plugins
-- [Localize Router](https://github.com/Greentube/localize-router) by @meeroslav: An implementation of routes localization for Angular 2. If you need localized urls (for example /fr/page and /en/page).
+- [Localize Router](https://github.com/Greentube/localize-router) by @meeroslav: An implementation of routes localization for Angular. If you need localized urls (for example /fr/page and /en/page).
 - [.po files Loader](https://www.npmjs.com/package/@biesbjerg/ng2-translate-po-loader) by @biesbjerg: Use .po translation files with ngx-translate
 - [ng2-translate-extract](https://www.npmjs.com/package/@biesbjerg/ng2-translate-extract) by @biesbjerg: Extract translatable strings from your projects
 
